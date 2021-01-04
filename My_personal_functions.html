@@ -20,7 +20,14 @@
     const para = document.querySelector('p');
 
     //Functions
-
+    
+    // Getting a random value from a JavaScript array
+    function computerPlay() {
+        const randomPc = ["Rock", "Paper", "Scissor"];
+        const random = Math.floor(Math.random() * randomPc.length);
+        
+        return randomPc[random];
+      }
     //Squared
     function squared(num) {
       return num * num;
